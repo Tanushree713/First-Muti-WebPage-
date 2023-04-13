@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medifine MultiWebpage</title>
+</head>
+<style>
+*{
+     margin: 0;
+     padding: 0;
+ }
+body{
+    background-color:  rgba(236, 246, 252, 0.925) ;
+    font-family: sans-serif;
+}
+img[alt="logo"]{
+    height: 45px;
+    padding: 15px;
+    margin-left: 20px;
+}
+nav{
+    background-color: rgb(236, 246, 252);
+    height: 50px;
+  
+}
+ul{
+    float: right;
+    list-style: none;
+    margin-top: 15px;
+
+}
+li{
+    display:inline;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(24, 23, 23);
+}
+a:hover{
+    color: rgb(52, 195, 62);
+    text-decoration-line:  underline;
+    text-decoration-color: rgba(42, 133, 63, 0.912);
+    text-decoration-style: solid ;
+}
+.section{
+    height: 400px;
+    width: 300px;
+    border: 2px solid  #808080;
+    margin: 7%; 
+    margin-left: 42%;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px 5px #808080;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: 600;
+    padding: 20px;
+    }
+h1{
+    padding-left: 30px;
+}    
+label{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+input#username{
+    width: 300px;
+    height: 25px;
+    border: 3px solid #808080;
+    border-radius: 8px;
+    padding: 5px;
+
+}
+input#useremail{
+    width: 300px;
+    height: 25px;
+    border: 3px solid #808080;
+    border-radius: 8px;
+    padding: 5px;
+
+}
+input#usermsg{
+    width: 290px;
+    height: 30px;
+    border: 3px solid #808080;
+    border-radius: 8px;
+    padding: 11px;
+}
+button{
+    padding: 10px 115px;
+    margin-left: 5%;
+    margin-top: 30px;
+    font-size: 16px;
+    border: 2px solid  rgb(70, 179, 70);;
+    border-radius: 16px;
+    background-color: rgb(70, 179, 70);
+    color: rgb(253, 254, 255);
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    color: rgba(42, 133, 63, 0.912);
+    background-color: white;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <img src="./logo.png" alt="logo">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section">
+    
+        <form id="section" method="post">
+            <h1>Contact Form</h1>
+            <br>
+            <br>
+        <label for="username">Name</label>
+        <br>
+        <input type="text" name="username" id="username" placeholder="Enter Your Name">
+       <br><br>
+        <label for="useremail">Email</label>
+        <br>
+        <input type="email" name="useremail" id="useremail" placeholder="Enter Your Email">
+        <br><br>
+        <label for="usermsg">Message</label>
+        <br>
+        <input type="text" name="usermsg" id="usermsg" placeholder="Enter Your Message">
+        <br><br>
+        <button>Submit</button>
+    </form>
+</div>
+</body>
+</html>
